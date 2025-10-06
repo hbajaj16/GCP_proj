@@ -11,10 +11,10 @@ app = Flask(__name__)
 # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://<DB_USER>:<DB_PASSWORD>@/<DB_NAME>?unix_socket=/cloudsql/<INSTANCE_CONNECTION_NAME>'
 # For public IP (ensure your VM's IP is whitelisted):
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{user}:{password}@{host}/{database}'.format(
-    user=os.environ.get('DB_USER', 'your_db_user'),
-    password=os.environ.get('DB_PASS', 'your_db_password'),
-    host=os.environ.get('DB_HOST', '127.0.0.1'), # Use the public or private IP of your Cloud SQL instance
-    database=os.environ.get('DB_NAME', 'your_db_name')
+    user=os.environ.get('DB_USER', 'root'),
+    password=os.environ.get('DB_PASS', 'G+=BfggzXd@7^aPi'),
+    host=os.environ.get('DB_HOST', '34.125.99.22'), # Use the public or private IP of your Cloud SQL instance
+    database=os.environ.get('DB_NAME', 'demodb')
 )
 
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
