@@ -1,0 +1,4 @@
+Flask
+Flask-SQLAlchemy
+PyMySQL # MySQL driver for Python
+gunicorn # A production-grade WSGI server (recommended for running on the VM)
